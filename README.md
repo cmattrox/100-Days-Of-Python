@@ -6,12 +6,19 @@ This repo will encompass my journey of learning as much as I can about python an
 
 Inside each folder is a project to practice working with python. The projects start out easier covering basic programming concepts and slowly become more difficult tackling more complex intricacies. There will be a README.md inside each folder to explain what the project is trying to accomplish.
 
-## To download needed dependencies:
+## To download needed dependencies
 
 If there is a Pipfile inside a folder, navigate to that folder and run `pipenv install` to download the needed dependencies.
 
-## To run a file:
+## To run a file
 
 Simply navigate to the desired folder and run `python3 main.py`.
 
 **NOTE:** Some of these projects will not be the best solution to the problem, this is simply a learning journey for me.
+
+## To initialize pip in a new folder
+
+Simply navigate to the desired folder and run `pipenv shell`. This will create a new pip environment to install
+needed dependencies.
+
+**NOTE:** You must not a pip environment already running. To close your current pip environment run `exit`.

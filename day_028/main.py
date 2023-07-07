@@ -1,4 +1,5 @@
 from tkinter import *
+from playsound import playsound
 import math
 
 # ---------------------------- CONSTANTS ------------------------------- #
@@ -7,9 +8,9 @@ RED = "#e7305b"
 GREEN = "#9bdeac"
 YELLOW = "#f7f5dd"
 FONT_NAME = "Courier"
-WORK_MIN = 0.1
-SHORT_BREAK_MIN = 0.1
-LONG_BREAK_MIN = 0.1
+WORK_MIN = 25
+SHORT_BREAK_MIN = 5
+LONG_BREAK_MIN = 30
 reps = 0
 on_break = False
 timer = None
@@ -45,6 +46,8 @@ def start_timer():
         countdown(LONG_BREAK_MIN * 60)
         reps = 0
         on_break = False
+
+    # playsound('./alert.wav')
 
 # ---------------------------- COUNTDOWN MECHANISM ------------------------------- # 
 def countdown(count):
