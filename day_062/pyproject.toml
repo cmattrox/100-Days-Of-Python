@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "day-062"
+version = "0.1.0"
+description = ""
+authors = ["Charlie Welch <welch.charlie16@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+bootstrap-flask = "^2.3.2"
+flask = "^3.0.0"
+flask-wtf = "^1.2.1"
+wtforms = "^3.1.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
